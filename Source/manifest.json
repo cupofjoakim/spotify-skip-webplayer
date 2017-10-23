@@ -9,6 +9,11 @@
       "js": ["content_script.js"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "icons": {
+    "16": "img/icon_small.png",
+    "48": "img/icon_medium.png",
+    "128": "img/icon_big.png"
+  }
 }
 
