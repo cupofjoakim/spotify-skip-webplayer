@@ -9,7 +9,7 @@ function walk() {
 
 function convertSpotifyLinks(node) {
   var initialAttribute = node.getAttribute("href");
-  var replacedAttribute = initialAttribute.replace(/(https:\/\/open.spotify.com\/)/i, "spotify:");
+  var replacedAttribute = initialAttribute.replace(/(https:\/\/open.spotify.com\/)/i, "spotify:").replace("/", ":");
 
   if (replacedAttribute !== initialAttribute) {
     node.setAttribute("href", replacedAttribute);
